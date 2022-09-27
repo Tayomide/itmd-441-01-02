@@ -44,11 +44,18 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
 #flex-section3 .tags ul {
-
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* end Flexbox Part 3 */
