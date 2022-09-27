@@ -129,15 +129,13 @@
 	color: #000;
 	padding: 20px;
 	text-decoration: none;
-
-
+	transition: color .3s, background-color .3s;
 }
 
 #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
-
-
+	transition: color .5s, background-color .5s;
 }
 
 /* end Transition Part */
