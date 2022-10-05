@@ -78,6 +78,7 @@
 #grid-section2 .gridboxblue {
 	grid-column: 2 / 4;
 	grid-row: 1 / 4;
+	position: relative;
 }
 
 #grid-section2 .gridboxred {
