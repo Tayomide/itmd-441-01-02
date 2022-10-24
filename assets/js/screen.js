@@ -27,6 +27,10 @@ const updateBill = () => { // Create a function to update the bill
   formElements["bill"].value = format(data.amount);
 }
 
+const updateTip = () => {
+  formElements["tip"].value = data.tip
+}
+
 const update = () => { // Create a function to update every other form element
   formElements["tip-amount"].value = format((data.amount * data.tip) / 100)
   formElements["total"].value = format(data.amount * (100 + data.tip) / 100)
@@ -34,8 +38,9 @@ const update = () => { // Create a function to update every other form element
   formElements["tip-percentage"].innerHTML = data.tip+"%"
 }
 
-update() // Call update on reload
-updateBill() // Call update bill on reload
+update() // Update form elements on reload
+updateBill() // Update bill on reload
+updateTip() // Update tip slider on reload
 
 const recalculateTip = (e) => { // Create function for recalculating tip on change
   data.tip = parseFloat(e.target.value) // store new tip value in data object
