@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ITMD-441 Lab 3 Tomiwa Ibrahim</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/reset.css" rel="stylesheet">
+    <link href="../assets/css/lab3style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11888.785254726938!2d-87.62850025!3d41.84560115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1666545506647!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form class="form">
+        <h2 id="title">&#42;ITMD-441 Tomiwa Ibrahim</h2>
+        <h2 id="header">Check Out page </h2>
+        <!-- Bill Total, Tip, Tip Percentage, Tip Amount, Tip Bill with Tip-->
+        <ul class="calculator-container">
+          <ul class="calculator-component total">
+            <li>
+              <label for="bill">Bill</label>
+              <p class="placeholder"></p>
+              <input type="number" name="bill" id="bill" autofocus>
+            </li>
+            <li>
+              <label for="tip-amount">Tip</label>
+              <p class="placeholder"></p>
+              <input type="number" name="tip-amount" id="tip-amount" disabled>
+            </li>
+            <li class="total-component">
+              <label for="total">Total</label>
+              <p class="placeholder"></p>
+              <input type="number" name="total" id="total" disabled>
+            </li>
+          </ul>
+          <ul class="calculator-component">
+            <li class="tip-container">
+              <label for="tip">Tip <p id="tip-percentage">10%</p></label>
+              <input type="range" min="0" max="100" value="50" name="tip" id="tip">
+            </li>
+            <li class="total-component">
+              <label for="tip-total">Tip total</label>
+              <p class="placeholder"></p>
+              <input type="number" name="tip-total" id="tip-total" disabled>
+            </li>
+          </ul>
+        </ul>
+      </form>
+    </main>
+    <footer></footer>
+    <script src="../assets/js/screen.js"></script>
+  </body>
+</html>
