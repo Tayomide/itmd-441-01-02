@@ -23,11 +23,11 @@ const format = (num) => { //Create a function to format output
   return num.toFixed(2)
 }
 
-const updateBill = () => { // Create a function to update the bill
+const updateBill = () => { // Create function to update the bill
   formElements["bill"].value = format(data.amount);
 }
 
-const updateTip = () => {
+const updateTip = () => { // Create function to update the tip slider
   formElements["tip"].value = data.tip
 }
 
